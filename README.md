@@ -16,7 +16,7 @@ __Bidirectional GRU + Attention seq2seq structure__
 
 <img src = https://images.velog.io/images/jyong0719/post/5d38f6a5-bd1f-4d71-8edd-8318168f38e3/image.png  width=70%;>
 
-- $ h^{<{t}'>} = (h^{\rightarrow{t}'},h^{\leftarrow{t}'}) $
+- $`h^{<{t}'>} = (h^{\rightarrow{t}'},h^{\leftarrow{t}'})`$
 	- concat forward occurence and backward occurence
 
 - $ \alpha^{<t,{t}'>} = \text{ amount of 'attention' }y^{< t >} \text{ should pay to }h^{{t}'} $
