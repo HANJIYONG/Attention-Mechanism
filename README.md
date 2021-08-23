@@ -16,10 +16,10 @@ __Bidirectional GRU + Attention seq2seq structure__
 
 <img src = https://images.velog.io/images/jyong0719/post/5d38f6a5-bd1f-4d71-8edd-8318168f38e3/image.png  width=70%;>
 
-- $h^{<{t}'>} = (h^{\rightarrow{t}'},h^{\leftarrow{t}'})$
+- $ h^{<{t}'>} = (h^{\rightarrow{t}'},h^{\leftarrow{t}'}) $
 	- concat forward occurence and backward occurence
 
-- $\alpha^{<t,{t}'>} = \text{ amount of 'attention' }y^{< t >} \text{ should pay to }h^{{t}'}$
+- $ \alpha^{<t,{t}'>} = \text{ amount of 'attention' }y^{< t >} \text{ should pay to }h^{{t}'} $
 - $\sum_{{t}'} \alpha^{<t,{t}'>} = 1$
 	- attention weight, Alpha는 전체 sequence 중 각 timestep의 input을 고려하는 척도로 총 합은 1
 - $C^{t} = \sum_{{t}'}\alpha^{<t,{t}'>}h^{<{t}' >}$
